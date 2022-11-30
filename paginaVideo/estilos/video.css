@@ -12,6 +12,7 @@ footer {
 body {
     font-family: sans-serif;
     background-color: rgba(184, 194, 228, 0.514);
+    overflow-x: hidden;
 }
 
 img {
@@ -33,6 +34,16 @@ header {
     z-index: 9999999999;
 }
 
+.textoLike {
+    margin-right: 2%;
+}
+
+.likes {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
 
 
 
@@ -47,18 +58,13 @@ header h1 {
     font-family: sans-serif;
     color: white;
     font-size: 1.5em;
-    margin: 0 .5em;
+    margin: 0.2em;
 }
-
-/* .containerLogo a {
-    width: 60px;
-    height: 60px;
-} */
 
 header .btnMenu {
     all: unset;
     cursor: pointer;
-    margin: 0 2em;
+    margin: 0.2em 0.1em;
 }
 
 header .svg {
@@ -270,8 +276,6 @@ th {
 
 tr {
     border: solid black 1px;
-    /* border-radius: 2000px;
-    overflow: hidden; */
 }
 
 
@@ -284,10 +288,6 @@ tr:nth-child(odd):hover {
     background-color: #739df727;
 }
 
-
-/* tr:hover {
-    background-color: #ddd;
-} */
 
 th {
     padding-top: 12px;
@@ -386,11 +386,6 @@ footer a {
     padding-top: 1.5%;
     cursor: pointer;
 }
-
-
-/* .itemInfo:hover {
-    background-color: #04AA6D;
-} */
 
 
 .infoGrupo {

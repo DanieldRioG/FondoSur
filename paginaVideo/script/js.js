@@ -12,15 +12,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const nav = document.querySelector('.nav');
 
 
+    const like = document.getElementById('like');
+    const dislike = document.getElementById('dislike');
+
+
+    like.addEventListener('click', () => {
+        mostrarLike();
+    });
+
+    dislike.addEventListener('click', () => {
+        mostrarDislike();
+    });
+
+
+
 
     mostrarMenu();
     moverCarrousel();
 
 
-
-    btnMenu.addEventListener('click', () => {
-        nav.classList.toggle('activo');
-    });
 
 
     imgGithubJavier.addEventListener('click', () => {
@@ -47,9 +57,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         linkGithubGrupo();
     });
 
-
-
-
+    btnMenu.addEventListener('click', () => {
+        nav.classList.toggle('activo');
+    });
 
 
 });
@@ -108,4 +118,12 @@ function moverCarrousel() {
             punto[i].classList.add('activo');
         });
     });
+}
+
+function mostrarLike() {
+    alert("hola");
+}
+
+function mostrarDislike() {
+    alert("hola");
 }
