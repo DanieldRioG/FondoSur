@@ -34,16 +34,6 @@ header {
     z-index: 9999999999;
 }
 
-.textoLike {
-    margin-right: 2%;
-}
-
-.likes {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
 
 
 

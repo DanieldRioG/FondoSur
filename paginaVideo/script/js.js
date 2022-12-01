@@ -12,18 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const nav = document.querySelector('.nav');
 
 
-    const like = document.getElementById('like');
-    const dislike = document.getElementById('dislike');
-
-
-    like.addEventListener('click', () => {
-        mostrarLike();
-    });
-
-    dislike.addEventListener('click', () => {
-        mostrarDislike();
-    });
-
 
 
 
@@ -118,12 +106,4 @@ function moverCarrousel() {
             punto[i].classList.add('activo');
         });
     });
-}
-
-function mostrarLike() {
-    alert("hola");
-}
-
-function mostrarDislike() {
-    alert("hola");
 }
