@@ -1,0 +1,642 @@
+body,
+header,
+nav,
+ul,
+li,
+footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(184, 194, 228, 0.514);
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    top: 0;
+    position: sticky;
+
+    width: 100%;
+    background-color: #282828;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+}
+
+
+#container{
+    background: linear-gradient(90deg, rgba(120,223,255,1) 0%, rgba(163,224,248,1) 49%, rgba(64,202,254,1) 100%); 
+    font-family: sans-serif;
+
+}
+
+.containerLogo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 1.5em;
+    margin: 0 .5em;
+}
+
+/* .containerLogo a {
+    width: 60px;
+    height: 60px;
+} */
+
+header .btnMenu {
+    all: unset;
+    cursor: pointer;
+    margin: 0 2em;
+}
+
+header .svg {
+    width: 2em;
+    height: 2em;
+    fill: white;
+}
+
+header .nav {
+    width: 100%;
+
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .nav.activo {
+    /*  25% del vh(viewport width : ancho del dispositivo) */
+    height: 25vh;
+    /* position: sticky; */
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+header .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+header .menu_item {
+    list-style: none;
+    margin: 1em 0;
+}
+
+
+/* TABLET HEADER*/
+@media screen and (min-width:768px) and (max-width:1200px) {
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin: 0 .7em;
+    }
+
+    header .btnMenu {
+        display: none;
+    }
+
+    header .nav {
+        width: auto;
+        max-height: 5vh;
+        height: auto;
+        margin: 1em 0;
+    }
+
+    header .menu {
+        flex-flow: row nowrap;
+    }
+
+    header .menu_item {
+        margin: 0 1.9em;
+    }
+
+    header a {
+        font-size: 1.8em;
+    }
+
+}
+
+/* PC HEADER*/
+@media (min-width:1201px) and (max-width:2000px) {
+    header {
+        justify-content: space-around;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin: 0 .5em;
+    }
+
+    header .btnMenu {
+        display: none;
+    }
+
+    header .nav {
+        width: auto;
+        max-height: 5vh;
+        height: auto;
+    }
+
+    header .menu {
+        flex-flow: row nowrap;
+    }
+
+    header .menu_item {
+        margin: 0 3em;
+    }
+
+    header a {
+        font-size: 1.8em;
+    }
+
+}
+
+.carrousel {
+    width: 100%;
+    max-width: 120em;
+    overflow-x: hidden;
+    background-color: #adb4c0;
+    padding-bottom: 1em;
+}
+
+.carrousel .containerImg {
+    width: 200%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel img {
+    width: calc(100% / 2);
+    min-height: 10vh;
+}
+
+.carrousel .puntos {
+    width: 100%;
+    margin: .1em 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carrousel .punto {
+    list-style: none;
+    width: 2em;
+    height: .7em;
+    background-color: rgb(98, 98, 226);
+    margin: 1em .7em 0;
+
+    border-radius: 20px;
+}
+
+.carrousel .punto.activo {
+    background-color: #1a2b44;
+}
+
+
+/* TABLET CARROUSEL*/
+@media (min-width:769px) and (max-width:1200px) {
+
+    .carrousel .punto {
+        list-style: none;
+        width: 3em;
+        height: 1em;
+        background-color: rgb(98, 98, 226);
+        margin: 1em .7em 0;
+
+        border-radius: 20px;
+    }
+
+}
+
+/* PC CARROUSEL*/
+@media (min-width:1201px) and (max-width:2000px) {
+
+    .carrousel .punto {
+        list-style: none;
+        width: 4em;
+        height: 1.3em;
+        background-color: rgb(98, 98, 226);
+        margin: 1em 1.5em 0;
+
+        border-radius: 20px;
+    }
+
+}
+
+.menu_link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+/* 
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .menu_item {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .menu_link:hover {
+        color: rgb(255, 255, 255);
+    }
+
+
+
+
+    */
+
+/* .main_menu_link:hover {
+    color: rgb(255, 255, 255);
+} */
+
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    .menu_item {
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .menu_link {
+        text-decoration: none;
+        color: white;
+        font-size: 1.9em;
+    }
+
+}
+
+/* PC */
+@media (min-width:1201px) and (max-width:2000px) {
+
+
+    .menu_link {
+        text-decoration: none;
+        color: white;
+        font-size: 2.2em;
+    }
+}
+
+
+#hero img {
+    width: 100%;
+}
+/*PODCAST*/
+#container{
+    border: 1px solid black;
+    border-radius: 5.5em;
+    margin: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+#imgAudio img{
+    width: 6.2rem;
+    background-color: rgb(146, 215, 255);
+
+}
+#imgAudio{
+    margin: 1.2rem;
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+#audioTexto{
+    margin: 1.2rem;
+}
+table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+
+    border-collapse: collapse;
+    border-radius: 6px;
+
+    margin-top: 13%;
+    margin-bottom: 13%;
+}
+
+
+td,
+th {
+    padding: 8px;
+}
+
+tr {
+    border: solid black 1px;
+    /* border-radius: 2000px;
+    overflow: hidden; */
+}
+
+
+tr:nth-child(even):hover {
+    background-color: #ffd2f950;
+}
+
+
+tr:nth-child(odd):hover {
+    background-color: #739df727;
+}
+
+
+/* tr:hover {
+    background-color: #ddd;
+} */
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(32, 44, 85, 0.836);
+    color: white;
+}
+
+#foto {
+    display: none;
+}
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1200px) {
+
+    table {
+
+        font-size: 2em;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    table img {
+        border-radius: 20px;
+    }
+
+    #foto {
+        display: block;
+    }
+}
+/*PODCAST*/
+@media screen  and (min-width: 481px) and (max-width: 768px){
+
+#container{
+    border: 1px solid black;
+    border-radius: 5.5em;
+    margin: 1.4rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr     ;
+}
+#imgAudio img{
+    width: 5.7rem;
+    background-color: rgb(146, 215, 255);
+}
+#imgAudio{
+    margin: 1.2rem;
+    align-self: flex-start;
+    justify-self: center;
+}
+#audioTexto{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 1.2rem;
+}
+
+}
+
+@media screen  and (max-width: 480px){
+    #container{
+        border: 1px solid black;
+        border-radius: 5.5em;
+        margin: 1.4rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr     ;
+    }
+    #imgAudio img{
+        width: 5.7rem;
+        background-color: rgb(146, 215, 255);
+    }
+    #imgAudio{
+        margin: 1.2rem;
+        align-self: flex-start;
+        justify-self: center;
+    }
+    #audioTexto{
+        text-align: center;
+        font-family: sans-serif;
+        margin: 1.2rem;
+    }
+
+}
+
+/* PC */
+@media (min-width:1201px) and (max-width:2000px) {
+
+    table {
+
+        font-size: 2.5em;
+    }
+
+    table img {
+        border-radius: 20px;
+    }
+
+    #foto {
+        display: block;
+    }
+}
+
+footer {
+
+    background-color: rgb(184, 194, 228);
+
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer a {
+    color: rgb(68, 93, 161);
+    text-decoration: none;
+}
+
+.infoParticipantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.infoParticipantes a {
+    margin-top: 8%;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.infoParticipantes a:hover {
+    color: white;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.itemInfo img {
+    border-radius: 100px;
+    width: 55%;
+    padding-top: 1.5%;
+    cursor: pointer;
+}
+
+
+/* .itemInfo:hover {
+    background-color: #04AA6D;
+} */
+
+
+.infoGrupo {
+    margin-top: 7%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+    padding: 2%;
+}
+
+.infoGrupo img {
+    margin-right: 1%;
+    width: 30px;
+    cursor: pointer;
+}
+
+.infoGrupo a {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.infoGrupo a:hover {
+    color: white;
+
+}
+
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .infoParticipantes a {
+        font-size: 1.5em;
+    }
+
+    .infoGrupo img {
+        width: 45px;
+    }
+
+    .infoGrupo a {
+        font-size: 2.2em;
+    }
+
+}
+
+/* PC */
+@media (min-width:1201px) and (max-width:2000px) {
+
+
+    .infoParticipantes a {
+        font-size: 2.3em;
+    }
+
+    .itemInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        margin-top: 5%;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .itemInfo img {
+        border-radius: 100px;
+        width: 100%;
+        padding-top: 1.7%;
+
+    }
+
+    .infoGrupo a {
+        font-size: 2.8em;
+        font-weight: bold;
+    }
+
+    .infoGrupo img {
+        width: 60px;
+    }
+
+}
+
+
+
+
+
+
+
