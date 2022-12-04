@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="estilos/video.css">
     <meta name="viewport" content="width=device-width">
     <script src="script/js.js"></script>
-    <link rel="icon" type="image/x-icon" href="./favicones/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicones/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicones/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="../favicones/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicones/favicones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicones/favicones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicones/favicon-16x16.png">
+    <link rel="manifest" href="../favicones/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="../favicones/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 
@@ -31,7 +31,7 @@
 
     <header class="header">
         <div class="containerLogo" id="logo">
-            <img src="favicones/logo.png" alt="BackCornerDevelopers logo">
+            <img src="../images/logo.png" alt="BackCornerDevelopers logo">
             <h1>Back Corner Developers</h1>
 
             <button class="btnMenu">
@@ -45,9 +45,9 @@
 
         <nav class="nav ">
             <ul class="menu" id="menu">
-                <li class="menu_item"> <a href="home.html" class="menu_link">Home</a> </li>
-                <li class="menu_item"> <a href="about.html" class="menu_link">Vídeo</a> </li>
-                <li class="menu_item"> <a href="classes.html" class="menu_link">Podcast</a> </li>
+                <li class="menu_item"> <a href="../Home/home.html" class="menu_link">Home</a> </li>
+                <li class="menu_item"> <a href="video.html" class="menu_link">Vídeo</a> </li>
+                <li class="menu_item"> <a href="../Podcast/podcast.html" class="menu_link">Podcast</a> </li>
             </ul>
         </nav>
 
@@ -56,14 +56,15 @@
 
     <main>
 
-        <video controls autoplay loop>
-            <source src="favicones/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+     
+            <iframe src="https://www.youtube.com/embed/gMw2p2Wz-K0" title="Partida de UNO"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        
 
 
         <aside>
-            <p>Video informativo sobre la temática de la página</p>
+            <p>Video jugando al UNO</p>
         </aside>
 
 
@@ -71,22 +72,22 @@
 
     <footer>
         <div class="infoParticipantes">
-            <div class="itemInfo"><img src="favicones/perfilJavi.png" id="imgGithubJavier" alt=""><a
+            <div class="itemInfo"><img src="../images/perfilJavi.png" id="imgGithubJavier" alt="perfilJavi"><a
                     href="https://github.com/javieralesanco">Javier</a>
 
             </div>
-            <div class="itemInfo"><img src="favicones/perfilDiego.png" id="imgGithubDiego" alt=""><a
+            <div class="itemInfo"><img src="../images/perfilDiego.png" id="imgGithubDiego" alt="perfilDiego"><a
                     href="https://github.com/DiegoBarrientosM">Diego</a></div>
-            <div class="itemInfo"><img src="favicones/perfilVictor.png" id="imgGithubVictor" alt=""><a
+            <div class="itemInfo"><img src="../images/perfilVictor.png" id="imgGithubVictor" alt="perfilVictor"><a
                     href="https://github.com/VictorS19">Victor</a></div>
-            <div class="itemInfo"><img src="favicones/perfilDaniel.png" id="imgGithubDaniel" alt=""><a
+            <div class="itemInfo"><img src="../images/perfilDaniel.png" id="imgGithubDaniel" alt="perfilDaniel"><a
                     href="https://github.com/DanieldRioG">Daniel</a></div>
-            <div class="itemInfo"><img src="favicones/perfilAdrian.png" id="imgGithubAdrian" alt=""><a
+            <div class="itemInfo"><img src="../images/perfilAdrian.png" id="imgGithubAdrian" alt="perfilAdrian"><a
                     href="https://github.com/adriibanez">Adrián</a></div>
         </div>
 
         <div class="infoGrupo">
-            <img src="favicones/git.png" alt="" id="imgGitGrupo">
+            <img src="../images/git.png" alt="fondo git" id="imgGitGrupo">
             <a href="https://github.com/DanieldRioG/FondoSur">Futuros Proyectos de Fondo Sur</a>
         </div>
     </footer>
