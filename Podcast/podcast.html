@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../favicones/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicones/favicones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicones/favicones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicones/favicon-16x16.png">
+    <link rel="manifest" href="../favicones/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicones/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="cssPodcast/style.css">
+    <script src="script/js.js"></script>
+    <title>Podcast</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="containerLogo" id="logo">
+          <a href="../Home/home.html"><img src="../images/logo.png" alt="BackCornerDevelopers logo"></a>
+          <h1>Back Corner Developers</h1>
+
+          <button class="btnMenu">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+          </button>
+      </div>
+
+      <nav class="nav ">
+          <ul class="menu" id="menu">
+              <li class="menu_item"> <a href="../Home/home.html" class="menu_link">Home</a> </li>
+              <li class="menu_item"> <a href="../paginaVideo/video.html" class="menu_link">Vídeo</a> </li>
+              <li class="menu_item"> <a href="podcast.html" class="menu_link">Podcast</a> </li>
+          </ul>
+      </nav>
+
+  </header>
+    <main>
+        <article id="podcast">
+          <div id="container">
+            <div id="imgAudio">
+                <img src="../images/logo.png" alt="Imagen con la temática del podcast">
+            </div>
+            <div id="audioTexto">
+                <audio controls>
+                    <source src="audio/Partida_de_UNO.mp3" type="audio/mp3">
+                    <source src="audio/Partida_de_UNO.wav" type="audio/wav">
+                    <source src="audio/Partida_de_UNO.ogg" type="audio/ogg">
+                    <p>Your browser does not support the audio element</p>
+                </audio>
+                <p>Podcast jugando al Uno</p>
+            </div>
+          </div>
+        </article>
+    </main>
+    <footer>
+      <div class="infoParticipantes">
+          <div class="itemInfo"><img src="../images/perfilJavi.png" id="imgGithubJavier" alt="perfilJavi"><a
+                  href="https://github.com/javieralesanco">Javier</a>
+          </div>
+          <div class="itemInfo"><img src="../images/perfilDiego.png" id="imgGithubDiego" alt="perfilDiego"><a
+                  href="https://github.com/DiegoBarrientosM">Diego</a></div>
+          <div class="itemInfo"><img src="../images/perfilVictor.png" id="imgGithubVictor" alt="perfilVictor"><a
+                  href="https://github.com/VictorS19">Victor</a></div>
+          <div class="itemInfo"><img src="../images/perfilDaniel.png" id="imgGithubDaniel" alt="perfilDaniel"><a
+                  href="https://github.com/DanieldRioG">Daniel</a></div>
+          <div class="itemInfo"><img src="../images/perfilAdrian.png" id="imgGithubAdrian" alt="perfilAdrian"><a
+                  href="https://github.com/adriibanez">Adrián</a></div>
+      </div>
+
+      <div class="infoGrupo">
+          <img src="../images/git.png" alt="perfil git" id="imgGitGrupo">
+          <a href="https://github.com/DanieldRioG/FondoSur">Futuros Proyectos de Fondo Sur</a>
+      </div>
+  </footer>
+  </body>
+</html>
