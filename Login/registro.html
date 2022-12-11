@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="js/registro.js"></script>
+    <script type="module" src="js/datos.js"></script>
+    <link rel="icon" type="image/x-icon" href="../favicones/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicones/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicones/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicones/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicones/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicones/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicones/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicones/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicones/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicones/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicones/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicones/favicones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicones/favicones/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicones/favicon-16x16.png">
+    <link rel="manifest" href="../favicones/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicones/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Registro - FondoSur</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <form id="form1" autocomplete="on">
+            <h2>Crear Cuenta</h2>
+            <input type="text" placeholder="Nombre de usuario" id="user">
+            <input type="password" placeholder="Contraseña" id="pass">
+            <input type="password" placeholder="Confirmar Contraseña" id="confirm">
+            <div class="botones">
+                <button type="button" id="volver">Volver</button>
+                <button type="button" id="siguiente1">Siguiente</button>
+            </div>
+        </form>
+
+        <form id="form2">
+            <h2>Información Personal</h2>
+            <input type="text" placeholder="Nombre" id="nombre">
+            <input type="text" placeholder="Apellido" id="apellido">
+            <input type="date" placeholder="Fecha nacimiento" id="fnac">
+
+            <div class="botones">
+                <button type="button" id="anterior1">Anterior</button>
+                <button type="button" id="siguiente2">Siguiente</button>
+            </div>
+        </form>
+
+        <form id="form3">
+            <h2>Información Personal</h2>
+            <input type="text" placeholder="Calle, Piso, Puerta" id="direccion">
+            <input type="text" placeholder="Número Teléfono" id="telefono">
+            <p id="tarjetaT">Numero de Tarjeta</p>
+            <div class="tarjeta">
+                <input type="text" maxlength="4" placeholder="____" id="numero1">
+                <input type="text" maxlength="4" placeholder="____" id="numero2">
+                <input type="text" maxlength="4" placeholder="____" id="numero3">
+                <input type="text" maxlength="4" placeholder="____" id="numero4">
+            </div>
+
+            <div class="botones">
+                <button type="button" id="anterior2">Anterior</button>
+                <button type="button" id="siguiente3">Siguiente</button>
+            </div>
+        </form>
+
+        <form id="form4">
+            <h2>Información Extra</h2>
+            <input type="email" placeholder="eCorreo" id="correo">
+            <input type="text" placeholder="Github (opcional)" id="linkGit">
+            <input type="text" placeholder="Linkedin (opcional)" id="linkLinked">
+
+            <div class="botones">
+                <button type="button" id="anterior3">Anterior</button>
+                <button type="submit" id="registrar">Registrar</button>
+            </div>
+        </form>
+
+        <div class="etapas">
+            <div id="progreso"></div>
+            <div class="columEtapa" id="etapa1"><small>Cuenta</small></div>
+            <div class="columEtapa"><small>Personal</small></div>
+            <div class="columEtapa"><small>Personal2</small></div>
+            <div class="columEtapa"><small>Extra</small></div>
+        </div>
+    </div>
+</body>
+
+</html>
