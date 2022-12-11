@@ -10,9 +10,9 @@ let last;
 document.addEventListener("DOMContentLoaded", function () {
     HMARGIN.push(...margenesVerticales());
     WMARGIN.push(margenesHorizontales());
-    usuario = localStorage.getItem('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+    usuario = localStorage.getItem('datos');
     usuario = 'tu';
-    if (usuario === null);//back();
+    back();
     document.getElementById('salir').addEventListener('click', function () { back(); });
     document.getElementById('usuario').textContent = 'Bienvenid@ ' + usuario;
     document.getElementById('start').addEventListener('click', function () { start() });
