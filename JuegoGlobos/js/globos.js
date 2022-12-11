@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     HMARGIN.push(...margenesVerticales());
     WMARGIN.push(margenesHorizontales());
     usuario = localStorage.getItem('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
-    usuario = 'tu';
-    if (usuario === null);//back();
+    if (usuario === null);
+    back();
     document.getElementById('salir').addEventListener('click', function () { back(); });
     document.getElementById('usuario').textContent = 'Bienvenid@ ' + usuario;
     document.getElementById('start').addEventListener('click', function () { start() });
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById(`globo${i}`).addEventListener('mousedown', function () { explode(`globo${i}`) });
     //Por algun motivo click daba fallos de precision;
 });
-function back() { location.href = '/FondoSur/Home/home.html'; }
+function back() { location.href = '/Home/home.html'; }
 function start() {
     tmax = 0;
     tmin = 60000;
