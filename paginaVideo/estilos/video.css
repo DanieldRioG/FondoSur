@@ -31,7 +31,7 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    z-index: 9999999999;
+    z-index: 1;
 }
 
 
@@ -40,12 +40,11 @@ header {
 .containerLogo {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 header h1 {
-    font-family: sans-serif;
     color: white;
     font-size: 1.5em;
     margin: 0.2em;
@@ -54,7 +53,7 @@ header h1 {
 header .btnMenu {
     all: unset;
     cursor: pointer;
-    margin: 0.2em 0.1em;
+    margin: 0 2em;
 }
 
 header .svg {
@@ -86,7 +85,6 @@ header .nav.activo {
 header a {
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
     font-family: sans-serif;
 }
 
@@ -138,6 +136,10 @@ header .menu_item {
     header a {
         font-size: 1.8em;
     }
+    header a:hover {
+        color: #c074ff;
+        transition: all .5s ease;
+    }
 
 }
 
@@ -172,6 +174,10 @@ header .menu_item {
 
     header a {
         font-size: 1.8em;
+    }
+    header a:hover {
+        color: #c074ff;
+        transition: all .5s ease;
     }
 
 }
@@ -426,6 +432,28 @@ footer a {
 
 }
 
+.cerrarSesion{
+    width: 6em;
+    height: 3em;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(173, 41, 41);
+
+    margin: 1em 45%;
+    color: white;
+    font-size: .8em;
+
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.cerrarSesion:hover{
+    background-color: rgb(207, 55, 55);
+
+}
 
 /* TABLET */
 @media screen and (min-width:768px) and (max-width:1200px) {
@@ -440,6 +468,21 @@ footer a {
     .infoGrupo a {
         font-size: 2.2em;
     }
+    .cerrarSesion{
+        width: 10em;
+        height: 4em;
+    }
+    
+    
+    .cerrarSesion{
+        width: 8em;
+        height: 1.5em;
+        color: white;
+        font-size: 2em;
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;}
 
 }
 
@@ -477,5 +520,19 @@ footer a {
     .infoGrupo img {
         width: 60px;
     }
-
+    .cerrarSesion{
+        width: 15em;
+        height: 4em;
+    }
+    .cerrarSesion{
+        width: 10em;
+        height: 1.7em;
+        color: white;
+        font-size: 2em;
+    
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;
+    }
 }

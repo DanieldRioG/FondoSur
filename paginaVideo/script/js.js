@@ -6,13 +6,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const imgGithubDaniel = document.getElementById('imgGithubDaniel');
     const imgGithubAdrian = document.getElementById('imgGithubAdrian');
 
+
     const imgGitGrupo = document.getElementById('imgGitGrupo');
-
-    const btnMenu = document.querySelector('btnMenu');
-    const nav = document.querySelector('.nav');
-
-
-
+    const cerrarSesion = document.querySelector('.cerrarSesion');
 
 
     mostrarMenu();
@@ -45,8 +41,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         linkGithubGrupo();
     });
 
-    btnMenu.addEventListener('click', () => {
-        nav.classList.toggle('activo');
+ 
+    cerrarSesion.addEventListener('click',()=>{
+        cerrarLaSesion();
     });
 
 
@@ -79,12 +76,22 @@ function linkGithubGrupo() {
 }
 
 
+
 function mostrarMenu() {
     const btnMenu = document.querySelector('.btnMenu');
     const nav = document.querySelector('.nav');
+    let contadorClicks = 0;
 
     btnMenu.addEventListener('click', () => {
-        nav.classList.toggle('activo');
+        contadorClicks ++;
+        
+        if (contadorClicks === 5) {
+            nav.classList.toggle('activo');
+            easterEgg();
+            nav.classList.toggle('activo');
+        }
+
+         nav.classList.toggle('activo');
     });
 }
 
@@ -106,4 +113,9 @@ function moverCarrousel() {
             punto[i].classList.add('activo');
         });
     });
+}
+function cerrarLaSesion(){
+    localStorage.removeItem('usuario');
+    location.href = '../Login/login.html';
+
 }

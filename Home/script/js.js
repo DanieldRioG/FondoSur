@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const imgGithubDaniel = document.getElementById('imgGithubDaniel');
     const imgGithubAdrian = document.getElementById('imgGithubAdrian');
 
+
     const imgGitGrupo = document.getElementById('imgGitGrupo');
+
+    const cerrarSesion = document.querySelector('.cerrarSesion');
+
 
     mostrarMenu();
     moverCarrousel();
@@ -41,6 +45,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     imgGitGrupo.addEventListener('click', () => {
         linkGithubGrupo();
+    });
+    cerrarSesion.addEventListener('click',()=>{
+        cerrarLaSesion();
     });
 
 });
@@ -122,4 +129,9 @@ function moverCarrousel() {
             punto[i].classList.add('activo');
         });
     });
+}
+function cerrarLaSesion(){
+    localStorage.removeItem('usuario');
+    location.href = '../Login/login.html';
+
 }

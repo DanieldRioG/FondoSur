@@ -183,17 +183,20 @@ header .menu_item {
     }
 
 }
+
 .menu_link {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 
 }
- /*  MAIN - TITULO  */
- #titulo{
+
+/*  MAIN - TITULO  */
+#titulo {
     text-align: center;
- }
- #salir{
+}
+
+#salir {
     cursor: pointer;
     border-width: 1px;
     color: white;
@@ -201,69 +204,80 @@ header .menu_item {
     padding: 7px;
     font-size: 1em;
     border-radius: 5px;
-    background-color:rgb(210, 96, 104);  
+    background-color: rgb(210, 96, 104);
     transition: all 0.5s;
-    }
-    #salir:hover{
-   
-    background-color:rgb(131, 44, 57) ; 
-    transition: all 0.5s;
-    }
-    #titulo p{
-        font-size: 1.5em;
-    }
-    body{
-        background-image: url('../images/Juego/fondoMainJuego.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
- /*  MAIN - FORMULARIO  */
-.bordeForm{
-    border: solid rgb(54, 63, 90) 2px;
-   border-radius: 20px;
-   background-color: rgb(137, 153, 201);
-   padding: 3em;
 }
-.labelDif{
+
+#salir:hover {
+
+    background-color: rgb(131, 44, 57);
+    transition: all 0.5s;
+}
+
+#titulo p {
+    font-size: 1.5em;
+}
+
+body {
+    background-image: url('../images/Juego/fondoMainJuego.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  MAIN - FORMULARIO  */
+.bordeForm {
+    border: solid rgb(54, 63, 90) 2px;
+    border-radius: 20px;
+    background-color: rgb(137, 153, 201);
+    padding: 3em;
+}
+
+.labelDif {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-#start{
-border-width: 1px;
-color: white;
-border-radius: 9px;
-font-size: 1.2em;
-font-weight: 300;
-background-image: linear-gradient(rgb(185, 100, 175),rgb(100, 100, 212));
-transition: all 0.5s;
+#start {
+    border-width: 1px;
+    color: white;
+    border-radius: 9px;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-image: linear-gradient(rgb(185, 100, 175), rgb(100, 100, 212));
+    transition: all 0.5s;
 }
-#start:hover{
-font-size: 1.5em;
-background-image: linear-gradient(rgb(248, 134, 235),rgb(119, 119, 252));
-transition: all 0.5s;
-}
- /*  MAIN - JUEGO  */
 
- main {
+#start:hover {
+    font-size: 1.5em;
+    background-image: linear-gradient(rgb(248, 134, 235), rgb(119, 119, 252));
+    transition: all 0.5s;
+}
+
+/*  MAIN - JUEGO  */
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 #globos {
     visibility: hidden;
     height: 50vh;
 }
+
 .globo {
     position: absolute;
     margin: 0;
 }
+
 .globo img {
     width: 3em;
     height: 3em;
 }
+
 fieldset {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -274,97 +288,114 @@ fieldset input[type='button'] {
     padding: 1em;
 }
 
+#contador,
+#resultados {
+    display: none;
+}
+
 /*-------Estilos del selector--------*/
 input[type=range] {
-    all:unset;
-  height: 26px;
-  -webkit-appearance: none;
-  margin: 10px 0;
-  width: 100%;
+    all: unset;
+    height: 26px;
+    appearance: none;
+    margin: 10px 0;
+    width: 100%;
 
 }
+
 input[type=range]:focus {
-  outline: none;
+    outline: none;
 }
+
 input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 14px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #50555C;
-  background: #50555C;
-  border-radius: 14px;
-  border: 0px solid #000000;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 1px 1px 1px #50555C;
+    background: #50555C;
+    border-radius: 14px;
+    border: 0px solid #000000;
 }
+
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 20px;
-  width: 40px;
-  border-radius: 12px;
-  background: #b0d5f8;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -3px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #b0d5f8;
+    cursor: pointer;
+    appearance: none;
+    margin-top: -3px;
 }
+
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #50555C;
+    background: #50555C;
 }
+
 input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 14px;
-  cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 1px 1px 1px #50555C;
-  background: #50555C;
-  border-radius: 14px;
-  border: 0px solid #000000;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 1px 1px 1px #50555C;
+    background: #50555C;
+    border-radius: 14px;
+    border: 0px solid #000000;
 }
+
 input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 20px;
-  width: 40px;
-  border-radius: 12px;
-  background: #b0d5f8;
-  cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #b0d5f8;
+    cursor: pointer;
 }
+
 input[type=range]::-ms-track {
-  width: 100%;
-  height: 14px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
-  background: #50555C;
-  border: 0px solid #000000;
-  border-radius: 28px;
-  box-shadow: 1px 1px 1px #50555C;
+    background: #50555C;
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px #50555C;
 }
+
 input[type=range]::-ms-fill-upper {
-  background: #50555C;
-  border: 0px solid #000000;
-  border-radius: 28px;
-  box-shadow: 1px 1px 1px #50555C;
+    background: #50555C;
+    border: 0px solid #000000;
+    border-radius: 28px;
+    box-shadow: 1px 1px 1px #50555C;
 }
+
 input[type=range]::-ms-thumb {
-  margin-top: 1px;
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #000000;
-  height: 20px;
-  width: 40px;
-  border-radius: 12px;
-  background: #b0d5f8;
-  cursor: pointer;
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #000000;
+    height: 20px;
+    width: 40px;
+    border-radius: 12px;
+    background: #b0d5f8;
+    cursor: pointer;
 }
+
 input[type=range]:focus::-ms-fill-lower {
-  background: #50555C;
+    background: #50555C;
 }
+
 input[type=range]:focus::-ms-fill-upper {
-  background: #50555C;
+    background: #50555C;
 }
 
 /* TABLET MENU*/
@@ -483,6 +514,41 @@ th {
     }
 }
 
+/*  Contador y resultados  */
+#contador{
+    border: solid rgb(25, 34, 100) 3px;
+    background-image: linear-gradient(rgb(162, 59, 124),rgb(33, 106, 196));
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+   margin-right: 75vw;
+   margin-bottom: 70vh;
+   color: white;
+  
+}
+#resultados{
+    border: solid rgb(54, 63, 90) 2px;
+    border-radius: 20px;
+    background-color: rgb(137, 153, 201);
+    padding: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#restart{
+    border-width: 1px;
+    color: rgb(54, 63, 90);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: rgb(200, 219, 235);
+}
+#tiempo{
+    font-size: 1.3em;
+    color: rgb(51, 4, 116);
+}
 footer {
 
     background-color: rgb(184, 194, 228);
@@ -561,6 +627,30 @@ footer a {
 }
 
 
+.cerrarSesion{
+    width: 6em;
+    height: 3em;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(173, 41, 41);
+
+    margin: 1em 45%;
+    color: white;
+    font-size: .8em;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.cerrarSesion:hover{
+    background-color: rgb(207, 55, 55);
+
+}
+
+
+
 /* TABLET FOOTER*/
 @media screen and (min-width:768px) and (max-width:1200px) {
     .infoParticipantes a {
@@ -575,6 +665,16 @@ footer a {
         font-size: 2.2em;
     }
 
+    
+    .cerrarSesion{
+        width: 8em;
+        height: 1.5em;
+        color: white;
+        font-size: 2em;
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;}
 }
 
 /* PC FOOTER*/
@@ -611,5 +711,16 @@ footer a {
     .infoGrupo img {
         width: 60px;
     }
-
+    .cerrarSesion{
+        width: 10em;
+        height: 1.7em;
+        color: white;
+        font-size: 2em;
+    
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;
+    }
+    
 }

@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+    const logo = document.querySelectorAll('#logo');
     const imgGithubJavier = document.getElementById('imgGithubJavier');
     const imgGithubDiego = document.getElementById('imgGithubDiego');
     const imgGithubVictor = document.getElementById('imgGithubVictor');
     const imgGithubDaniel = document.getElementById('imgGithubDaniel');
     const imgGithubAdrian = document.getElementById('imgGithubAdrian');
-
 
     const imgGitGrupo = document.getElementById('imgGitGrupo');
 
@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     mostrarMenu();
     moverCarrousel();
 
+    logo.forEach((e)=>{
+        e.addEventListener('click', () => {
+            linkHome();
+        });
+    });
+    
 
     imgGithubJavier.addEventListener('click', () => {
         linkGithubUno();
@@ -39,18 +45,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     imgGitGrupo.addEventListener('click', () => {
         linkGithubGrupo();
     });
+
     cerrarSesion.addEventListener('click',()=>{
         cerrarLaSesion();
     });
 
-
-
-
-
 });
 
 
-
+function linkHome() {
+    window.location.href = '../Home/home.html';
+}
 
 function linkGithubUno() {
     window.location.href = 'https://github.com/javieralesanco';
@@ -76,7 +81,6 @@ function linkGithubGrupo() {
 }
 
 
-
 function mostrarMenu() {
     const btnMenu = document.querySelector('.btnMenu');
     const nav = document.querySelector('.nav');
@@ -93,6 +97,18 @@ function mostrarMenu() {
 
          nav.classList.toggle('activo');
     });
+}
+
+function easterEgg(){
+    const menu = document.querySelector('.menu');
+    const li = document.createElement('li');
+    li.setAttribute('class','menu_item');
+    const a = document.createElement('a');
+    a.textContent = 'No Hacks';
+    a.setAttribute('class','menu_link');
+    a.setAttribute('href','home.html');
+    li.append(a);
+    menu.append(li);
 }
 
 function moverCarrousel() {
@@ -114,6 +130,7 @@ function moverCarrousel() {
         });
     });
 }
+
 function cerrarLaSesion(){
     localStorage.removeItem('usuario');
     location.href = '../Login/login.html';
