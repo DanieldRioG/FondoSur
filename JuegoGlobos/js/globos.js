@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     HMARGIN.push(...margenesVerticales());
     WMARGIN.push(margenesHorizontales());
 
+
     const user = JSON.parse(localStorage.getItem('usuario'));
     
     usuario = user;
@@ -18,6 +19,7 @@ if (usuario === null) {
     back();
 }
     
+
     document.getElementById('salir').addEventListener('click', function () { back(); });
     document.getElementById('usuario').textContent = 'Bienvenid@ ' + usuario;
     document.getElementById('start').addEventListener('click', function () { start() });
