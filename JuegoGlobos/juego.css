@@ -260,6 +260,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #globos {
@@ -513,6 +514,41 @@ th {
     }
 }
 
+/*  Contador y resultados  */
+#contador{
+    border: solid rgb(25, 34, 100) 3px;
+    background-image: linear-gradient(rgb(162, 59, 124),rgb(33, 106, 196));
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+   margin-right: 75vw;
+   margin-bottom: 70vh;
+   color: white;
+  
+}
+#resultados{
+    border: solid rgb(54, 63, 90) 2px;
+    border-radius: 20px;
+    background-color: rgb(137, 153, 201);
+    padding: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#restart{
+    border-width: 1px;
+    color: rgb(54, 63, 90);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 300;
+    background-color: rgb(200, 219, 235);
+}
+#tiempo{
+    font-size: 1.3em;
+    color: rgb(51, 4, 116);
+}
 footer {
 
     background-color: rgb(184, 194, 228);
