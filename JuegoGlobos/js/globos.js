@@ -30,7 +30,7 @@ if (usuario === null) {
         document.getElementById(`globo${i}`).addEventListener('mousedown', function () { explode(`globo${i}`) });
     //Por algun motivo click daba fallos de precision;
 });
-function back() { location.href = '/Home/home.html'; }
+function back() { location.href = '../Home/home.html'; }
 function start() {
     tmax = 0;
     tmin = 60000;
