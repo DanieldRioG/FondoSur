@@ -627,6 +627,30 @@ footer a {
 }
 
 
+.cerrarSesion{
+    width: 6em;
+    height: 3em;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(173, 41, 41);
+
+    margin: 1em 45%;
+    color: white;
+    font-size: .8em;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.cerrarSesion:hover{
+    background-color: rgb(207, 55, 55);
+
+}
+
+
+
 /* TABLET FOOTER*/
 @media screen and (min-width:768px) and (max-width:1200px) {
     .infoParticipantes a {
@@ -641,6 +665,16 @@ footer a {
         font-size: 2.2em;
     }
 
+    
+    .cerrarSesion{
+        width: 8em;
+        height: 1.5em;
+        color: white;
+        font-size: 2em;
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;}
 }
 
 /* PC FOOTER*/
@@ -677,5 +711,16 @@ footer a {
     .infoGrupo img {
         width: 60px;
     }
-
+    .cerrarSesion{
+        width: 10em;
+        height: 1.7em;
+        color: white;
+        font-size: 2em;
+    
+        margin: 1em 35%;
+    
+        text-align: center;
+        cursor: pointer;
+    }
+    
 }

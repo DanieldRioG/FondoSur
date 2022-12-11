@@ -11,9 +11,13 @@ function hacerLogin() {
     let array = JSON.parse(localStorage.getItem("datos"));
     let user = array[0];
     let pass = array[1];
+
+    localStorage.removeItem('usuario');
+    localStorage.setItem("usuario", JSON.stringify(user));
+
     console.log(pass);
     if (usuario == user && password == pass) {
-        location.href = "/FondoSur/Home/home.html";
+        location.href = "../Home/home.html";
     } else {
         let error = document.getElementById("error")
         error.textContent = "Usuario o contraseña incorrectos";
