@@ -15,7 +15,7 @@ body {
 .contenedor {
     width: 380px;
     height: 450px;
-    margin: 7.5% auto;
+    margin: calc((100vh - 355px)/2) auto;
     margin-bottom: 7.65%;
     overflow: hidden;
     background-color: #fff;
