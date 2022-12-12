@@ -17,7 +17,7 @@ body {
     width: 380px;
     height: 450px;
     margin: calc((100vh - 355px)/2) auto;
-    margin-bottom: 8.65%;
+
     overflow: hidden;
     background-color: #fff;
     position: relative;
@@ -92,11 +92,6 @@ a:hover {
     color: #d32626;
 }
 
-@media screen and (min-width:600px) and (max-width:1200px) {
-    body {
-        height: 625px;
-    }
-}
 
 @media screen and (min-width:300px) and (max-width:599px) {
     body {

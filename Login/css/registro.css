@@ -16,7 +16,7 @@ body {
     width: 380px;
     height: 450px;
     margin: calc((100vh - 355px)/2) auto;
-    margin-bottom: 7.65%;
+
     overflow: hidden;
     background-color: #fff;
     position: relative;
@@ -159,11 +159,6 @@ form button {
     border-left: 10px solid rgba(0, 250, 113, 0.8155637254901961);
 }
 
-@media screen and (min-width:600px) and (max-width:1200px) {
-    body {
-        height: 625px;
-    }
-}
 
 @media screen and (min-width:300px) and (max-width:599px) {
     body {
